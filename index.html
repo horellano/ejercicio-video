@@ -3,12 +3,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Mi Página XHTML</title>
+  <title>Mi Reproductor de Video</title>
   <link rel="stylesheet" type="text/css" href="estilo.css" />
 </head>
 <body>
-  <h1>Bienvenido a mi página</h1>
-  <p>Esta es una página escrita en XHTML y utiliza una hoja de estilo externa.</p>
-  <img src="imagen.jpg" alt="Una imagen de ejemplo" />
+  <div id="container">
+    <header>
+      <h1>Reproductor de Video</h1>
+    </header>
+    <main>
+	<video controls="controls">
+  		<source src="video.mp4" type="video/mp4" />
+  		<source src="video.ogg" type="video/ogg" />
+  		Tu navegador no soporta la etiqueta de video.
+	</video>
+
+    </main>
+    <footer>
+      <p>&copy; 2023 Todos los derechos reservados.</p>
+    </footer>
+  </div>
 </body>
 </html>
